@@ -55,7 +55,7 @@ export function OccasionBudgetStep() {
         <div className="grid grid-cols-2 gap-4">
           <div>
             <label htmlFor="min-budget" className="block text-sm font-medium text-gray-700">
-              Minimum ($)
+              Minimum (Rupees)
             </label>
             <input
               type="number"
@@ -72,7 +72,7 @@ export function OccasionBudgetStep() {
           </div>
           <div>
             <label htmlFor="max-budget" className="block text-sm font-medium text-gray-700">
-              Maximum ($)
+              Maximum (Rupees)
             </label>
             <input
               type="number"
