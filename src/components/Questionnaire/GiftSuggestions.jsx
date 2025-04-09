@@ -124,7 +124,7 @@ export function GiftSuggestions() {
             <h3 className="text-lg font-medium text-gray-900 mb-2">Price Range</h3>
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm font-medium text-gray-700">Min ($)</label>
+                <label className="block text-sm font-medium text-gray-700">Min (Rupees)</label>
                 <input
                   type="number"
                   value={priceRange.min}
@@ -133,7 +133,7 @@ export function GiftSuggestions() {
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700">Max ($)</label>
+                <label className="block text-sm font-medium text-gray-700">Max (Rupees)</label>
                 <input
                   type="number"
                   value={priceRange.max}
@@ -157,7 +157,7 @@ export function GiftSuggestions() {
               <div className="p-4 space-y-2">
                 <h3 className="text-lg font-semibold text-gray-900">{gift.name}</h3>
                 <p className="text-sm text-gray-600">{gift.description}</p>
-                <p className="text-lg font-bold text-indigo-600">${gift.price.toFixed(2)}</p>
+                <p className="text-lg font-bold text-indigo-600">{gift.price.toFixed(2)} Rupees</p>
                 <div className="flex items-center justify-between pt-2">
                   <button
                     onClick={() => toggleSaveGift(gift.id)}
